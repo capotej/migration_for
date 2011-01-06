@@ -15,7 +15,7 @@ class MigrationForGenerator < Rails::Generators::Base
     :add_column => 3,
     :rename_column => 3,
     :change_column => 3,
-    :remove_column => 3,
+    :remove_column => 2,
     :add_index => 2,
     :remove_index => 2,
   }
