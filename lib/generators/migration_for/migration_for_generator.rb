@@ -34,7 +34,7 @@ class MigrationForGenerator < Rails::Generators::Base
   end  
 
   def commands_to_arguments(cmds = nil)
-    cmds.map { |c| "'#{c}'" }.join(',') if cmds
+    cmds.map { |c| ":#{c}" }.join(',') if cmds
   end
 
   def lookup_command(command = nil)
